@@ -1,16 +1,11 @@
 # screenshot_manager
 
-A new Flutter project.
+A better way to organize your screenshots or other photos
 
-## Getting Started
+## Features
+1. organize photos according to tags
+2. set reminder for a specific photo or screenshot
 
-This project is a starting point for a Flutter application.
+## design
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
