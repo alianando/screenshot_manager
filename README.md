@@ -8,11 +8,11 @@ A flutter app to organize screenshots and other downloaded photos
 ## design
 <table>
   <tr>
-    <td><img src="media\Screenshot_20240129_012112.jpg" width=270 height=480></td>
-    <td><img src="media\Screenshot_20240129_011805.jpg" width=270 height=480></td>
+    <td><img src="media\Screenshot_20240129_012112.jpg" width=270 height=580></td>
+    <td><img src="media\Screenshot_20240129_011805.jpg" width=270 height=580></td>
   </tr>
     <tr>
-    <td><img src="media\Screenshot_20240129_012147.jpg" width=270 height=480></td>
-    <td><img src="media\Screenshot_20240129_012008.jpg" width=270 height=480></td>
+    <td><img src="media\Screenshot_20240129_012147.jpg" width=270 height=580></td>
+    <td><img src="media\Screenshot_20240129_012008.jpg" width=270 height=580></td>
   </tr>
  </table>
