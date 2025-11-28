@@ -19,12 +19,27 @@ class ShowRecent extends StatelessWidget {
       return Container();
     }
     final List<String> p_paths = rp.data!.photos!;
-    final List<Widget> p_widgets = p_paths.map((e) => ImageTile(e)).toList();
-    return StaggeredGrid.count(
-      crossAxisCount: 3,
-      mainAxisSpacing: 10,
-      crossAxisSpacing: 10,
-      children: p_widgets,
+    // final List<Widget> p_widgets = p_paths.map((e) => ImageTile(e)).toList();
+    // return StaggeredGrid.count(
+    //   crossAxisCount: 3,
+    //   mainAxisSpacing: 10,
+    //   crossAxisSpacing: 10,
+    //   children: p_widgets,
+    // );
+    return GridView.builder(
+      physics: const ScrollPhysics(),
+      shrinkWrap: true,
+      itemCount: p_paths.length, // Specify the number of items in the grid
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        mainAxisSpacing: 10,
+        crossAxisSpacing: 10,
+        childAspectRatio: 0.5, // Specify the aspect ratio of each item
+      ),
+      itemBuilder: (BuildContext context, int index) {
+        // Return the desired widget for each item in the grid
+        return ImageTile(p_paths[index]);
+      },
     );
   }
 }
@@ -46,6 +61,8 @@ class ImageTile extends StatelessWidget {
         child: Image.file(
           File(path),
           fit: BoxFit.cover,
+          cacheHeight: 1000,
+          cacheWidth: 500,
         ),
       ),
     );

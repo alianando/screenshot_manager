@@ -74,7 +74,7 @@ class _AvailableDirectoriesState extends State<AvailableDirectories> {
             rp.set_data(new_rm);
           },
           trailing: Icon(
-            Icons.select_all,
+            is_selected ? Icons.radio_button_checked : Icons.radio_button_off,
             color: is_selected ? Colors.amber : Colors.white,
           ),
           shape: RoundedRectangleBorder(

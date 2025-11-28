@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:screenshot_manager/maintanance.dart';
+// import 'package:screenshot_manager/maintanance.dart';
 import '1_permission/0_check_permission.dart';
 
 import '2_root/0_root.dart';
@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider<RootProvider>(
-            create: (context) => RootProvider()),
+          create: (context) => RootProvider(),
+        ),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

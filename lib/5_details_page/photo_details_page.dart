@@ -37,6 +37,15 @@ class PhotoDetailsPage extends StatelessWidget {
               Navigator.pop(context);
             },
             icon: const Icon(Icons.delete),
+          ),
+          IconButton(
+            onPressed: () {
+              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                content: Text("Alarm fiture will be added very soon"),
+                duration: Duration(milliseconds: 600),
+              ));
+            },
+            icon: const Icon(Icons.alarm),
           )
         ],
       ),
